@@ -44,6 +44,11 @@
 		grid-template-rows: auto auto 1fr auto;
 	}
 
+	.main-grid {
+		display: grid;
+		grid-template-columns: auto 1fr;
+	}
+
 	.scrollable::-webkit-scrollbar {
 		width: 10px;
 	}
