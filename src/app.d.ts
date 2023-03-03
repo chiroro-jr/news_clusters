@@ -9,4 +9,10 @@ declare global {
 	}
 }
 
-export {}
+type NewsArticle = {
+	url: string
+	title: string
+	cluster: number
+}
+
+export { NewsArticle }

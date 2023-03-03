@@ -1,10 +1,6 @@
 <script lang="ts">
 	import NewsTableItem from './NewsTableItem.svelte'
-	type NewsArticle = {
-		url: string
-		title: string
-		cluster: number
-	}
+	import type { NewsArticle } from '../app'
 	export let news: NewsArticle[]
 </script>
 

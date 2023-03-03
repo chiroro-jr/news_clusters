@@ -1,9 +1,5 @@
 <script lang="ts">
-	type NewsArticle = {
-		url: string
-		title: string
-		cluster: number
-	}
+	import type { NewsArticle } from '../app'
 
 	export let item: NewsArticle
 </script>
