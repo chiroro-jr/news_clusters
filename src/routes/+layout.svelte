@@ -2,6 +2,7 @@
 	import '../app.css'
 	import data from '../news_articles_clustered_no_content.json'
 	import Footer from './Footer.svelte'
+	import Gradient from './Gradient.svelte'
 	import Header from './Header.svelte'
 	import Heading from './Heading.svelte'
 	import NewsTable from './NewsTable.svelte'
@@ -21,9 +22,8 @@
 </svelte:head>
 
 <div class="app-grid | w-full h-full">
-	<!-- Top Gradient -->
-	<div class="gradient | h-2" />
-	<Header {selectedCluster} />
+	<Gradient />
+	<Header bind:selectedCluster />
 	<main>
 		<div class="mx-auto max-w-container py-6 px-5">
 			<Heading>
