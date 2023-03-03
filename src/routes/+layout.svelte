@@ -2,10 +2,9 @@
 	import '../app.css'
 	import data from '../news_articles_clustered_no_content.json'
 	import Footer from './Footer.svelte'
+	import Header from './Header.svelte'
 	import Heading from './Heading.svelte'
-	import Logo from './Logo.svelte'
 	import NewsTable from './NewsTable.svelte'
-	import SelectInput from './SelectInput.svelte'
 
 	let selectedCluster = ''
 	$: visibleClusters = data.filter((item) => {
@@ -21,20 +20,10 @@
 	<title>News Clusters</title>
 </svelte:head>
 
-<div class="app-grid | min-w-screen min-h-screen">
+<div class="app-grid | w-full h-full">
 	<!-- Top Gradient -->
 	<div class="gradient | h-2" />
-	<div class="bg-white py-6 space-y-4">
-		<Logo />
-		<!-- select box to change cluster in view -->
-		<form class="max-w-[400px] mx-auto flex flex-col gap-2 items-center">
-			<label for="clusters" class="font-medium text-center text-gray-4"
-				>Choose a cluster to view</label
-			>
-			<SelectInput bind:selectedCluster />
-		</form>
-		<div />
-	</div>
+	<Header {selectedCluster} />
 	<main>
 		<div class="mx-auto max-w-container py-6 px-5">
 			<Heading>
