@@ -15,13 +15,14 @@ module.exports = {
 				4: '#6a6c6f'
 			}
 		},
-		maxWidth: {
-			container: '50rem'
-		},
 		fontFamily: {
 			'ubuntu-mono': ['Ubuntu Mono', 'monospace', 'sans-serif']
 		},
-		extend: {}
+		extend: {
+			maxWidth: {
+			container: '50rem'
+		},
+		}
 	},
 	plugins: []
 }
