@@ -20,7 +20,7 @@ module.exports = {
 		},
 		extend: {
 			maxWidth: {
-			container: '50rem'
+			container: '65rem'
 		},
 		}
 	},
